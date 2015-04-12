@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+
+
+<head><link rel="stylesheet" type="text/css" href="1.css">
+ <script src="counter.js"></script>
+<style type="text/css">
+.auto-style1 {
+	text-align: left;
+	font-size: large;
+	font-family: "Times New Roman", Times, serif;
+}
+.auto-style2 {
+	text-align: left;
+}
+.auto-style3 {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+</style>
+</head>
+<h1 class="auto-style1">WHERE WOULD YOU LIKE TO VISIT ?</h1>
+<p class="auto-style1">&nbsp;</p>
+<p class="auto-style1">&nbsp;</p>
+<form action="#" class="auto-style3" style="width: 253px">
+
+   
+  <p style="width: 189px"><input type="checkbox" id="test1" /><label for="test1"><span class="ui"></span></label><a href="qutb.html" target="frame2">QUTB MINAR</a></p>
+  <p><input type="checkbox" id="test2" /><label for="test2"><span class="ui"></span></label><a href="fort.html" target="frame2">THE RED FORT</a></p>
+  <p><input type="checkbox" id="test3" /><label for="test3"><span class="ui"></span></label><a href="tomb.html" target="frame2">HUMAYUN'S TOMB</a></p>
+  <p><input type="checkbox" id="test4" /><label for="test4"><span class="ui"></span></label><a href="aksh.html" target="frame2">AKSHARDHAM</a></p>
+  <p><input type="checkbox" id="test5" /><label for="test5"><span class="ui"></span></label><a href="rashtra.html" target="frame2">RASHATRAPATI BHAVAN</a></p>
+  <p><input type="checkbox" id="test6" /><label for="test6"><span class="ui"></span></label><a href="gate.html" target="frame2">INDIA GATE</a></p>
+  <p><input type="checkbox" id="test3" /><label for="test7"><span class="ui"></span></label><a href="jama.html" target="frame2">JAMA MASJID</a></p>	
+	
+
+</form>
+<div></div>
+
+
+<script>
+
+var countChecked = function() {
+  var n = $( "input:checked" ).length;
+  $( "div" ).text( n + (n == 1 ? " is" : " are") + " checked!" );
+};
+
+countChecked();
+ 
+$( "input[type=checkbox]" ).on( "click", countChecked );
+</script>
+</html>

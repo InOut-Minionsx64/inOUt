@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Site Name: Tag line</title>
+		<meta name="description" content="Blueprint: Slide and Push Menus" />
+		<meta name="keywords" content="sliding menu, pushing menu, navigation, responsive, menu, css, jquery" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body class="cbp-spmenu-push">
+		
+		<nav class="cbp-spmenu cbp-spmenu-horizontal cbp-spmenu-top" id="cbp-spmenu-s3">
+			<h3>Menu</h3>
+			<a href="#">Home</a>
+			<a href="#">my planner</a>
+			<a href="#">diary</a>
+			<a href="stories.html">My Story</a>
+			<a href="">About us</a>
+			<a href="contacts.html">Contact us</a>
+	
+		</nav>
+		
+		<div class="container">
+			<header class="clearfix">
+				<span>Website Name</span>
+				<h1>Tag Line</h1>
+				
+			</header>
+			
+			<font face="Roboto" color="black"><h1>Contacts</h1></font><br>
+			<hr>
+			<font face="Roboto" color="#5b92e5"><h4>ARSHPREET SINGH PABLA | abc@gmail.com |9867878768</h4> <br>
+								    <h4>HARSH JADAV | abc@gmail.com |9867878768</h4> <br>
+							      <h4>TUSHAR SRIVASTAVA | abc@gmail.com |9867878768</h4> <br>
+                                  
+													</font>
+			<font face="Roboto" color="black"><h4></h4></font><br>
+			<font face="Roboto" color="black"><h4></h4></font><br>
+
+			<div class="main">
+				<section>
+					
+		
+			
+					<button id="showTop">Menu</button>
+				
+				</section>
+						</div>
+		</div>
+		
+		<script src="js/classie.js"></script>
+		<script>
+			var 
+				menuTop = document.getElementById( 'cbp-spmenu-s3' ),
+				
+				showTop = document.getElementById( 'showTop' ),
+							body = document.body;
+
+			showTop.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( menuTop, 'cbp-spmenu-open' );
+				disableOther( 'showTop' );
+			};
+
+
+			function disableOther( button ) {
+				
+			
+				if( button !== 'showTop' ) {
+					classie.toggle( showTop, 'disabled' );
+				}
+			
+			
+				
+			}
+		</script>
+	</body>
+</html>

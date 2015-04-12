@@ -1,0 +1,28 @@
+﻿<html>
+<div>
+  <h2>How Much Does It cost?</h2>
+  <img src="http://placekitten.com/100/50" />
+  <p>The answer goes here!</p>
+</div>
+
+<style>
+	
+div {
+  width: 500px;
+  position: relative;
+  overflow: hidden;
+}
+h2 {
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  transition: top 0.2s linear;
+}
+img {
+  position: absolute;
+  right: 20px;
+  bottom: 15px;
+  transition: bottom 0.2s linear;
+}
+</style>
+</html>
